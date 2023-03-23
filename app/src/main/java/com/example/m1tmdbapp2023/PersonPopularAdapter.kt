@@ -1,5 +1,7 @@
 package com.example.m1tmdbapp2023
 
+import android.app.NotificationChannel
+import android.app.NotificationManager
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -7,6 +9,8 @@ import com.example.m1tmdbapp2023.ApiClient.Companion.IMAGE_BASE_URL
 import com.squareup.picasso.Picasso
 import android.content.Context
 import android.graphics.Color
+import android.os.Build
+import android.provider.Settings.Global.getString
 import com.example.m1tmdbapp2023.databinding.PersonItemBinding
 
 class PersonPopularAdapter(private val persons: ArrayList<Person>, context: Context) : RecyclerView.Adapter<PersonPopularAdapter.PersonItemViewHolder>(){
@@ -70,6 +74,7 @@ class PersonPopularAdapter(private val persons: ArrayList<Person>, context: Cont
             Color.RED
         }
     }
+
 
     /* class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val nameTv: TextView

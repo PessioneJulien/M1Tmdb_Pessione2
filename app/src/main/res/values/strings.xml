@@ -4,6 +4,8 @@
     <string name="total_results_text">"Showing %1d/%1d persons"</string>
     <string name="total_results_default_text">Nothing to show</string>
     <string name="no_label">No label !</string>
+    <string name="channel_name">Popular People</string>
+    <string name="channel_description">Notifications for the most popular people in TMDB</string>
 
     <string-array name="score_rating">
         <item>POOR</item>
